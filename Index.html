@@ -1,22 +1,333 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Page of My Own</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e6;
+            color: #30382f;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #244b3b;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e9a17e;
+        }
+
+        .intro {
+            padding: 65px 8%;
+            background-color: #e6e9db;
+            border-bottom: 5px solid #d88765;
+        }
+
+        .intro small {
+            color: #a45538;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .intro h1 {
+            font-size: 43px;
+            line-height: 1.2;
+            margin: 15px 0;
+            color: #244b3b;
+        }
+
+        .intro p {
+            max-width: 580px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #244b3b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        .heading {
+            color: #244b3b;
+            font-size: 29px;
+            margin-top: 0;
+        }
+
+        .about {
+            max-width: 800px;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .fact {
+            background-color: white;
+            padding: 18px;
+            border-left: 4px solid #d88765;
+            border-radius: 5px;
+        }
+
+        .fact h3 {
+            margin-top: 0;
+            color: #244b3b;
+        }
+
+        .skills {
+            background-color: #e6e9db;
+        }
+
+        .skill {
+            display: inline-block;
+            background-color: #244b3b;
+            color: white;
+            padding: 7px 14px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .project {
+            background-color: white;
+            padding: 22px;
+            border-radius: 8px;
+            border-top: 4px solid #d88765;
+            max-width: 650px;
+        }
+
+        .project h3 {
+            color: #244b3b;
+        }
+
+        .contact {
+            background-color: #244b3b;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .heading {
+            color: white;
+        }
+
+        .contact a {
+            color: #f2b08e;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            background-color: #183528;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .intro h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 35px 6%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
 
-    <h2>About Me</h2>
-    <p>Hello! I am 3rd year university student.</p>
+    <header>
+        <h2>My Corner</h2>
 
-    <h2>My Skills</h2>
-    <p>I am learning programming and web development.</p>
+<nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <h2>My Projects</h2>
-    <p>This is my first portfolio website.</p>
+    <div class="intro">
+        <small>WELCOME TO MY PAGE</small>
 
-    <h2>Contact Me</h2>
-    <p>Email:edlawit.teshale77@gmail.com</p>
+        <h1>Hello, I'm Edlawit!</h1>
+
+        <p>
+            I'm a third-year university student.
+            This is a little space where I can share
+            what I'm learning, what I enjoy, and what
+            I hope to do in the future.
+        </p>
+
+        <a class="button" href="#about">Get to know me</a>
+    </div>
+
+    <section id="about">
+        <h2 class="heading">A little about me</h2>
+
+        <div class="about">
+            <p>
+                I'm currently studying at university, and
+                I'm learning more about computers and
+                technology. I made this website as part
+                of my learning journey.
+            </p>
+
+<p>
+                At first, writing code feel confusing,
+                but I am trying to understand it one step
+                at a time. I want to practice more and
+                become better at building websites.
+            </p>
+
+            <p>
+                This page is my first step toward making
+                more projects and learning new things.
+            </p>
+        </div>
+
+        <div class="facts">
+            <div class="fact">
+                <h3>My studies</h3>
+                <p>Third-year university student.</p>
+            </div>
+
+            <div class="fact">
+                <h3>What I enjoy</h3>
+                <p>Learning, exploring ideas, and technology.</p>
+            </div>
+
+            <div class="fact">
+                <h3>My next step</h3>
+                <p>Practice coding and create more projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Things I'm learning</h2>
+
+        <p>
+            These are some of the topics I am learning
+            or practicing during my studies.
+        </p>
+
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Git basics</span>
+        <span class="skill">Web design</span>
+    </section>
+
+    <section id="project">
+        <h2 class="heading">My first project</h2>
+
+        <div class="project">
+            <h3>My Personal Website</h3>
+
+            <p>
+                The goal of this project is to build a
+                website that introduces me and shows
+                what I am learning.
+            </p>
+
+<p>
+                I used HTML to organize the content and
+                CSS to add colors, spacing, and style.
+                I also used GitHub to store my work and
+                keep track of changes.
+            </p>
+
+            <p>
+                <strong>What I learned:</strong>
+                How a webpage is structured, how to
+                style it, and how to save my work online.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="heading">Looking ahead</h2>
+
+        <p>
+            I hope to keep improving my skills, understand
+            more about programming, and build websites
+            that are useful and easy to use.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Let's connect</h2>
+
+        <p>
+            Thank you for taking the time to visit my page!
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:edlawit.teshale77@gmail.com">
+                edlawit.teshale77@gmail.com 
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>Made by Edlawit Teshale| My first portfolio</p>
+        <p>Learning something new, one step at a time.</p>
+    </footer>
+
 </body>
-</html>
+    </html>
