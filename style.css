@@ -81,3 +81,56 @@ footer {
         margin: 5px;
     }
 }
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .card-list {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
