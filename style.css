@@ -1,14 +1,13 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: white;
-    color: white;
+    color: black;
     line-height: 1.6;
 }
 
 header {
-    background-color:brown;
+    background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,17 +20,17 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: lightblue;
 }
 
 .intro {
-    background-color: pink;
+    background-color: lightblue;
     padding: 50px 20px;
     text-align: center;
 }
 
 .small-heading {
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
@@ -40,7 +39,7 @@ section {
 }
 
 h2, h3 {
-    color: brown;
+    color: black;
 }
 
 .card-list {
@@ -50,27 +49,29 @@ h2, h3 {
 }
 
 .card {
-    background-color: brown;
+    background-color: black;
+    color: white;
     padding: 15px;
     border-radius: 5px;
 }
 
 .button {
-    background-color: white;
-    color: white;
+    background-color: lightblue;
+    color: black;
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .contact-highlight {
-    background-color: brown;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
 footer {
-    background-color: pink;
-    color: white;
+    background-color: lightblue;
+    color: black;
     text-align: center;
     padding: 15px;
 }
@@ -81,6 +82,7 @@ footer {
         margin: 5px;
     }
 }
+
 @media screen and (max-width: 768px) {
 
     header {
